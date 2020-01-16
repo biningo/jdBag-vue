@@ -1,5 +1,5 @@
 # foreign_trade
-# 基于element-ui的前端外贸官网vue项目
+# 基于element-ui的前端外贸官网vue项目  后端是spring boot
 ## Project setup
 ```
 npm install
