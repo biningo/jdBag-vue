@@ -19,6 +19,7 @@
 
         <!--                表格-->
         <el-table
+
                 height="480"
 
                 ref="filterTable"
@@ -146,6 +147,7 @@
         components: {AddCommodity},
         data() {
             return {
+
                 commodity:{
                     title: '',
                     date:'',
@@ -164,10 +166,12 @@
             }
         },
         mounted(){
+
           request({
               url:'/goods/goods'
           }).then(resp=>{
               this.tableData = resp.data
+
           }).catch(err=>{alert(err)});
 
 

@@ -45,7 +45,7 @@
                 isEdit:false,
                 edit:false,
                 categories:'',
-                checkedCities: [],
+
 
                 categoryForm:{
                     categoryName:'',
