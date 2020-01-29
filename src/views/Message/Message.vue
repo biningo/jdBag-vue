@@ -84,8 +84,8 @@
 
         data(){
             return {
+                loading:false,
                 messageForm: {
-                    loading:false,
                     name: '',
                     contact:'', //联系方式
                     address:'',

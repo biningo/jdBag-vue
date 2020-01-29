@@ -198,15 +198,18 @@
 
             handleEdit(index, row) {
                 this.currentMessage = this.tableData[index];
-                this.tableData[index].visit = "已读";
+                if (this.tableData[index].visit!=="已读"){
+                    this.tableData[index].visit = "已读";
 
-                request({
-                    url:'/message/save',
-                    params:this.tableData[index]
-                }).catch(err=>{alert("error")});
+                    request({
+                        url:'/message/save',
+                        params:this.tableData[index]
+                    }).catch(err=>{alert("error")});
 
+                    this.detailVisible=true;
+                    console.log(index, row);
+                }
                 this.detailVisible=true;
-                console.log(index, row);
             },
 
             handleDelete(index, row) {

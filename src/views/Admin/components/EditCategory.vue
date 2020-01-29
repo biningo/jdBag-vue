@@ -72,7 +72,7 @@
                 }).then(resp=>{
 
                     for(var i=0;i<this.categories.length;i++){
-                        if(this.categories[i].id==this.categoryForm.id)
+                        if(this.categories[i].id===this.categoryForm.id)
                             this.categories.splice(i,1);
                     }
                     this.edit=false
